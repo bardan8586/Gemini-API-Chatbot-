@@ -2,7 +2,7 @@
 🤖 Gemini AI Chatbot
 Welcome to the Gemini AI Chatbot! This project is a chatbot powered by the Gemini AI API, designed to provide intelligent and interactive conversations. Whether you're integrating it into your application or just exploring its capabilities, this README will guide you through setup and usage.
 
-Chatbot Demo <!-- Replace with an actual screenshot or GIF of your chatbot -->
+Chatbot Demo 
 
 </div>
 ✨ Features
@@ -17,7 +17,7 @@ Lightweight: Built with modern web technologies for fast and efficient performan
 🛠️ Technologies Used
 Frontend: HTML5 CSS3 JavaScript
 
-Backend: Node.js (if applicable)
+Backend: Express.js
 
 API: Gemini AI API
 
@@ -114,9 +114,9 @@ Inspired by OpenAI's ChatGPT.
 📞 Contact
 If you have any questions or feedback, feel free to reach out:
 
-Your Name
+Bardan Karki
 
-Email: your.email@example.com
+Email: karkibardan063@gmail.com
 
 GitHub: your-username
 
