@@ -118,7 +118,7 @@ Bardan Karki
 
 Email: karkibardan063@gmail.com
 
-GitHub: your-username
+
 
 <div align="center">
 Enjoy using the Gemini AI Chatbot! 🚀
