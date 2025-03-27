@@ -36,7 +36,7 @@ const createBotResponse = async (incomingMessageDiv) => {
         // Use localhost:5002 when running locally with live-server (127.0.0.1:5500)
         const baseURL = window.location.hostname === '127.0.0.1' 
             ? 'http://localhost:5002'
-            : 'https://gemini-api-chatbot.vercel.app/';
+            : 'https://gemini-api-chatbot.vercel.app';
             
         const response = await fetch(`${baseURL}/chat`, {
             method: "POST",
