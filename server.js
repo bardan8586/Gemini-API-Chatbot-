@@ -10,8 +10,8 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5002;
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+//const __filename = fileURLToPath(import.meta.url);
+//const __dirname = path.dirname(__filename);
 
 // More permissive CORS configuration
 app.use((req, res, next) => {
@@ -21,11 +21,11 @@ app.use((req, res, next) => {
     res.header('Access-Control-Allow-Credentials', true);
     
     // Handle OPTIONS method
-    if (req.method === 'OPTIONS') {
-        return res.status(200).json({
-            body: "OK"
-        });
-    }
+    // if (req.method === 'OPTIONS') {
+    //     return res.status(200).json({
+    //         body: "OK"
+    //     });
+    // }
     
     next();
 });
@@ -33,12 +33,12 @@ app.use((req, res, next) => {
 app.use(express.json());
 
 // Serve static files
-app.use(express.static(path.join(__dirname)));
+//app.use(express.static(path.join(__dirname)));
 
 // Serve index.html
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
-});
+// app.get('/', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'index.html'));
+// });
 
 app.post("/chat", async (req, res) => {
     try {
