@@ -1,12 +1,15 @@
 {
-  "headers": [
+  "version": 2,
+  "builds": [
+    { "src": "server.js", "use": "@vercel/node" },
+    { "src": "*.css", "use": "@vercel/static" },
+    { "src": "*.js", "use": "@vercel/static" },
+    { "src": "*.html", "use": "@vercel/static" }
+  ],
+  "routes": [
     {
-      "source": "/chat",
-      "headers": [
-        { "key": "Access-Control-Allow-Origin", "value": "*" },
-        { "key": "Access-Control-Allow-Methods", "value": "POST, OPTIONS" },
-        { "key": "Access-Control-Allow-Headers", "value": "Content-Type" }
-      ]
+      "src": "/chat",
+      "dest": "server.js"
     }
   ]
 }
